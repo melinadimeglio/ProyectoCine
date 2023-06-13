@@ -1,0 +1,810 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+/** INICIO DE PAGINAS**/
+body{
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100%;
+}
+
+header{
+    background-image: url(../imagenes/fondo-negro.jpeg);
+    background-attachment: fixed;
+    border: solid 3px black;
+}
+
+.bg-body-tertiary{
+    background-image: url(../imagenes/fondo-negro.jpeg) !important;
+}
+.color__1{
+    color: aliceblue;
+}
+
+.color__2{
+    color: rgb(146, 145, 145);
+}
+
+.navbar__button{
+    color: rgb(200, 24, 24);
+    background-color: white;
+}
+
+.navbar__logo{
+    font-family:'Staatliches', cursive;
+    font-size: 3.5rem;
+    color: aliceblue;
+}
+
+.navbar__link{
+    font-size: 2.3rem;
+    font-family:'Staatliches', cursive;
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.nav-link:hover{
+    color: rgb(200, 24, 24);
+}
+
+.seleccion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 30px;
+    outline: solid 3px rgb(66, 65, 65);
+}
+
+
+.menu ul li a{
+    font-size: 20px;
+    color: black;
+    font-family: 'Arial';
+    background-color: grey;
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    text-decoration: none; 
+    align-self: center;
+}
+
+.caja{
+    background-image: url(../imagenes/fondo-blanco.jpeg);
+    margin-right: 15%;
+    margin-left: 15%;
+    border: solid 3px black;
+}
+
+/** INDEX **/
+.bloque__cartelera{
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin:0px 0px;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.cartelera{
+    position: sticky;
+    top: 0;
+}
+
+.imagen__1{
+    width: 100%;
+    height: 90%;  
+    margin-top:30px;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+    margin-left: 3%;
+}
+
+.imagen__2{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__3{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__4{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__5{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__6{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__7{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__8{
+    width: 100%;
+    height:90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.imagen__9{
+    width: 100%;
+    height: 90%;
+    margin-left: 3%;
+    box-shadow: 2px 1px 1px 1px rgba(11, 10, 10, 0.3);
+}
+
+.contenedorTotal {
+    display: grid;
+    grid-template-areas:
+    "imagen sinopsis"
+    "caracteristicas video";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 40%;
+    justify-content: center;
+}
+
+.img-1 {
+    grid-area: imagen;
+    justify-self: center;
+
+}
+
+.titulo__pelicula{
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+
+}
+
+.sinopsis {
+    grid-area: sinopsis;
+    list-style: none;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: start;
+    margin: 30px;
+}
+
+.sinopsis p{
+    text-align: justify;
+}
+
+.caracteristicas{
+    grid-area: caracteristicas;
+    align-self: start;
+    justify-self: center;
+}
+
+.caracteristicas ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    width: 100%;
+}
+
+.subtitulo{
+    font-family: 'Staatliches', cursive;
+    color: rgb(200, 24, 24);
+    padding: 3px 0px;
+}
+
+.video {
+    grid-area: video;
+    justify-self: center;
+    align-self: start;
+    width: 95%;
+}
+
+.botonClase{
+    display: flex;
+    justify-content: center;
+}
+.boton{
+    width: 90px;
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.parrafo-trailer{
+    display: inline-block;
+    font-family: 'Staatliches', cursive;
+    font-size:30px;
+    border:dashed 3px black;
+    padding: 3px;
+    margin: 0px 470px;
+    
+}
+
+footer{
+    background-image: url(../imagenes/fondo-negro.jpeg);
+    color: grey;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer ul li{
+    display: inline-block;
+    color: white;
+}
+
+footer nav{
+    padding: 0px;
+}
+
+.footer__parrafo{
+    margin: 0px;
+    padding-left: 18px;
+}
+.footer__seleccion{
+    color: grey;
+    text-decoration: none;
+}
+
+.redes img{
+    width: 30px;
+    display: block;
+    margin-top: 5px;
+}
+.redes{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+/** FIN INDEX **/
+
+/** HORARIOS **/
+.bloque__horarios{
+    background-color: rgb(66, 65, 65);
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.bloque{
+    position: sticky;
+    top: 0;
+}
+
+
+.horarios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "horarios__1 horarios__2 horarios__3"
+    "horarios__4 horarios__5 horarios__6"
+    "horarios__7 horarios__8 horarios__9";
+    grid-gap: 10px;
+}
+
+.horarios__1_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__1;    
+}
+
+.horarios__2_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__2;
+}
+
+.horarios__3_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__3;
+}
+
+.horarios__4_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__4;
+}
+
+.horarios__5_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__5;
+}
+
+.horarios__6_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__6;
+}
+
+.horarios__7_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__7;
+}
+
+.horarios__8_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__8;
+}
+
+.horarios__9_img{
+    width: 100%;
+    height: 90%;
+    grid-area: horarios__9;
+}
+
+.horarios__p{
+    font-family: 'Staatliches', cursive;
+    width: 100%;
+    font-size: 1.5rem;
+    border:dashed 3px black;
+    padding: 5px;
+    text-align: center;
+}
+
+.funciones{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+.funciones:hover{
+    background-color: rgb(200, 24, 24);
+}
+/** FIN HORARIOS **/
+
+/** COMBOS **/
+.bloque__combos{
+    background-color: rgb(66, 65, 65);
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.combos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "combo1 combo2"
+    "combo3 combo4";
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 15px;
+}
+
+.combos__1{
+    grid-area: combo1;
+}
+
+.combos__2{
+    grid-area: combo2;
+}
+
+.combos__3{
+    grid-area: combo3;
+}
+
+.combos__4{
+    grid-area: combo4;
+}
+
+.bloque-combos{
+    position: sticky;
+    top: 0;
+}
+.parrafo__combo{
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    border:dashed 3px black;
+    padding: 3px;
+    margin: 30px;
+    text-align: center;
+}
+/** FIN COMBOS **/
+
+/** PRECIOS **/
+.bloque__precios{
+    background-color: rgb(66, 65, 65);
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.precios{
+    position: sticky;
+    top: 0;
+}
+
+.precios-pagos{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.parrafo{
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    border:dashed 3px black;
+    padding: 3px;
+    display: inline-block;
+}
+
+.tabla__precios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.barra{
+    background-color: rgb(200, 24, 24);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin:0px 0px;
+}
+
+table{
+    background-color: grey;
+    border: solid 1px black;
+    color: aliceblue;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+}
+th{
+    background-color: black;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+
+td{
+    padding:15px;
+    border-bottom: solid 1px;
+}
+
+td:hover{
+    background-color: tomato;
+}
+th:hover{
+    background-color: brown;
+}
+
+tr:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.medios{
+    width: 100%;
+    display: inline-block;
+    margin: 40px;
+}
+/** FIN PRECIOS **/
+
+/** PROXIMOS ESTRENOS **/
+.bloque__proximos-estrenos{
+    background-color: rgb(66, 65, 65);
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.estreno{
+    position: sticky;
+    top: 0;
+}
+
+.h-100{
+    height: 600px!important;
+}
+/** FIN PROXIMOS ESTRENOS**/
+
+
+/** CONTACTO **/
+.bloque__contacto{
+    background-color: rgb(66, 65, 65);
+    background-image: url(../imagenes/Copia\ de\ matrix.jpeg);
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.bloque-contacto{
+    position: sticky;
+    top: 0px;
+}
+
+.parrafo-consultas{
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    border:dashed 3px black;
+    padding: 3px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.consultas{
+    margin-left: 20px;
+}
+
+.consultas__2{
+    margin:10px 15px;
+
+}
+
+.item-consulta{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    color: black;
+    border: dashed 3px black;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 30px;    
+}
+
+form ul{
+    padding: 0px;
+}
+form ul li{
+    list-style: none;
+    padding: 1px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 80%;
+}
+/** FIN CONTACTO **/
+
+/** MQ **/
+/** TABLET **/
+@media screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+
+    .caja{
+        background-image: none;
+        margin: 0;
+    }
+
+    .contenedorTotal{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .caracteristicas{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+    }
+    .horarios{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "horarios__1 horarios__2"
+        "horarios__3 horarios__4"
+        "horarios__5 horarios__6"
+        "horarios__7 horarios__8"
+        "horarios__9 .";
+        grid-gap: 10px;
+        padding-bottom: 30%;
+    }
+}
+
+.h-100{
+    height: 300px;
+}
+
+.parrafo-consultas{
+    margin-left: 120px;
+}
+    
+/** MOBILE **/
+@media screen and (max-width: 500px){
+    .contenedorTotal{
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: 
+        "imagen caracteristicas"
+        "sinopsis sinopsis";
+        margin-top: 20px;
+    }
+
+    .img-1{
+        margin-left: 30px;
+        height: 70%;
+        align-self: center;
+    }
+    .caracteristicas{
+        grid-area: caracteristicas;
+    }
+
+    .sinopsis{
+        grid-area: sinopsis;
+    }
+
+    .video{
+        display: none;
+    }
+    
+
+    .horarios{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "horarios__1"
+        "horarios__2"
+        "horarios__3"
+        "horarios__4"
+        "horarios__5"
+        "horario__6"
+        "horarios__7" 
+        "horarios__8"
+        "horarios__9";
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .horarios__1_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__2_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__3_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__4_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__5_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__6_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__7_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__8_img{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .horarios__9_img{
+        width: 100%;
+        height: 70%;
+    }
+
+.combos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "combo1"
+    "combo2"
+    "combo3"
+    "combo4";
+    justify-content: center;
+    justify-items: center;
+}
+
+.h-100{
+    height: 300px!important;
+}
+
+.parrafo-consultas{
+    display: none;
+}
+.consultas{
+    display: none;
+}
+
+.contacto{
+    justify-content: center;
+}
+form{
+    width: 100%;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.tabla__precios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.medios table{
+    width: 100%;
+    flex-direction: column;
+}
+.redes{
+    display: none;
+}
+}
+

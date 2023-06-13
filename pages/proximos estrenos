@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagenes/pelicula (1).png" type="image/x-icon">
+    <title>CineMatrix</title>
+</head>
+<body>
+    <header>
+        <!--MENU DE NAVEGACION-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar__logo" href="../index.html"><span class=color__1>Cine</span><span class="color__2">Matrix</span></a>
+                <button class="navbar-toggler navbar__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="../index.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="horarios.html">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="combos.html">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="proximos-estrenos.html">Proximos estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--SELECTOR DE PELICULAS DISABLED-->
+    <div class="seleccion">
+        <div class="seleccion__peliculas">
+            <select name="pelicula" id="pelicula">
+                <option value="Jov"> El joven manos de tijeras - 2D Cast</option>
+                <option value="Bell"> La bella y la bestia - 2D Cast</option>
+                <option value="For"> Forest Gump - 2D Cast</option>
+                <option value="Rey"> El Rey Leon - 2D Cast</option>
+                <option value="Ama"> Antes del amanecer - 2D Cast</option>
+                <option value="Clu"> Ni idea - 2D Cast</option>
+                <option value="Scr"> Scream - 2D Cast</option>
+                <option value="Tru"> El show de Truman - 2D Cast</option>
+                <option value="Sex"> Sexto sentido - 2D Cast</option>
+            </select>
+        </div>
+
+        <div class="menu">
+            <ul class="menu__numeros">
+                <li>
+                    <a class="menu__numeros__2" href="#">1</a>
+                    <a class="menu__numeros__2" href="#">2</a>
+                    <a class="menu__numeros__2" href="#">3</a>
+                    <a class="menu__numeros__2" href="#">4</a>
+                    <a class="menu__numeros__2" href="#">5</a>
+                    <a class="menu__numeros__2" href="#">6</a>
+                    <a class="menu__numeros__2" href="#">7</a>
+                    <a class="menu__numeros__2" href="#">8</a>
+                    <a class="menu__numeros__2" href="#">9</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="caja">
+        <!--CAROUSEL-->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/joven-manos-de-tijeras.jpeg" class="d-block w-100 h-100" alt="el joven manos de tijeras">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/mejores_peliculas_anos_noventa_la_bella_y_la_bestia.jpeg" class="d-block w-100 h-100" alt="la bella y la bestia">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/forest-gump.jpeg" class="d-block w-100 h-100" alt="forest gump">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/el-rey-leon.jpeg" class="d-block w-100 h-100" alt="el rey leon">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/antes-del-amanecer.jpeg" class="d-block w-100 h-100" alt="antes del amanecer">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/clueless.jpeg" class="d-block w-100 h-100" alt="clueless">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/scream.jpeg" class="d-block w-100 h-100" alt="scream">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/el-show-de-truman.jpeg" class="d-block w-100 h-100" alt="el show de truman">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/sexto-sentido.jpeg" class="d-block w-100 h-100" alt="sexto sentdo">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+
+        <div class="cartelera">
+            <p class="bloque__proximos-estrenos">PROXIMOS ESTRENOS</p>
+        </div>
+
+
+        <!--EL JOVEN MANOS DE TIJERAS-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__1" src="../imagenes/tijera-sinopsis.webp" alt="titanic sinopsis">
+            </div>
+
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Romance</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Jhonny Deep. Winona Ryder.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Tim Burton</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">JOVEN MANOS DE TIJERAS</span></p>
+                <p>Estupenda fábula con mucho de cuento de hadas sobre un ser (Johnny Depp) creado por un viejo inventor que muere antes de cambiarle las tijeras por manos humanas. El joven es "adoptado" por una vendedora de Avon (Dianne Wiest), quien lo lleva a vivir a un típico suburbio americano.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+
+                <div class="video">
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/nfJPYIfT2-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+        </section>
+        
+        <!--LA BELLA Y LA BESTIA-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__2" src="../imagenes/bella-y-bestia.webp" alt="la bella y la bestia" alt="seven sinopsis">
+            </div>
+
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Infantil</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Bill Condon</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>ATP</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">LA BELLA Y LA BESTIA</span></p>
+                <p>Bella intercambia su libertad por la de su padre y queda atrapada en un castillo encantado, habitado por una Bestia que en realidad es un príncipe maldito. Bella descubre la bondad y nobleza en el interior de la Bestia. Juntos, superan desafíos y aprenden a valorar la belleza interior, demostrando que el amor puede transformar incluso a las criaturas más extrañas.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+                        
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/25iuB-O7kkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--FOREST GUMP-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__3" src="../imagenes/forest-gump.webp" alt="forest gump">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Drama</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Tom Hanks. Robin Wright. </li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Robert Zemeckis</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">FOREST GUMP</span></p>
+                <p>Sentado en un banco en Savannah, Georgia, Forrest Gump espera al autobús. Mientras éste tarda en llegar, el joven cuenta su vida a las personas que se sientan a esperar con él. Aunque sufre un pequeño retraso mental, esto no le impide hacer cosas maravillosas. Sin entender del todo lo que sucede a su alrededor, Forrest toma partido en los eventos más importantes de la historia de los Estados Unidos.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Cyh1LpxnaxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- EL REY LEON-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__4" src="../imagenes/el-rey-leon.webp" alt="el rey leon">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Infantil</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Rob Minkoff. Roger Allers.</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">EL REY LEON</span></p>
+                <p>Tras la muerte de su padre, Simba deberá enfrentarse a su tío para recuperar el trono de Rey de la Selva. Timón y Pumba le acompañarán en su misión.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bjJvvrKl83M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--ANTES DEL AMANECER-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__5"src="../imagenes/Copia de antes-del-amanecer.jpeg" alt="antes del amanecer">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Romance</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Julie Delpy. Ethan Hawke</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Richard Linklater</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">ANTES DE AMANECER</span></p>
+                <p>Un joven periodista norteamericano, que acaba de romper con su novia, y una estudiante francesa se conocen casualmente en el tren Budapest-París. Entablan conversación y deciden recorrer Viena juntos durante una noche que cambiará sus vidas.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/yarH41l4RgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--NI IDEA-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__6" src="../imagenes/Copia de clueless.jpeg" alt="clueless">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Comedia romantica</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Alicia Silverstone. Paul Rudd</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Amy Heckerling</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">NI IDEA</span></p>
+                <p>Cher y Dionne son dos de las chicas más populares de un instituto de Beverly Hills. Su máxima preocupación es llevar la ropa más atractiva y ser tan populares como sea posible. Pero a pesar de su apariencia, Cher tiene un gran corazón.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Mgjwq1ZzdPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--SCREAM-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__7" src="../imagenes/Copia de scream.jpeg" alt="scream">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Romance</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Sidney Campbell. Courtney Cox.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Wes Craven. Matt Bettinelli-Olpin.</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">SCREAM</span></p>
+                <p>Un asesino en serie, con máscara y disfraz negro, siembra el pánico entre los adolescentes de un pueblo californiano. Paralelamente, la joven Sidney Prescott atraviesa un mal momento: se cumple un año desde que murió su madre.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/AWm_mkbdpCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+            </div>
+        </section>
+        
+        <!--EL SHOW DE TRUMAN-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__8" src="../imagenes/the-truman-show.jpeg" alt="el show de truman">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Aventura</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Jim Carrey.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Peter Weir.</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">EL SHOW DE TRUMAN</span></p>
+                <p>Truman Burbank es la estrella de un programa de televisión pero él no lo sabe. Desde que nació, su vida es televisada y emitida para todo el mundo.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/dlnmQbPGuls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+        </section>
+
+        <!--SEXTO SENTIDO-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__9" src="../imagenes/sexto.jpeg" alt="sexto sentido">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Terror</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Cole Sear.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>M. Night Shyamalan.</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">SEXTO SENTIDO</span></p>
+                <p>Malcolm Crowe es un psicólogo infantil que vive obsesionado por el recuerdo de un joven al que fue incapaz de ayudar. Cuando conoce a Cole, un aterrorizado y confuso niño de ocho años, ve que se le presenta la oportunidad de redimirse haciendo todo lo posible para ayudarlo. Sin embargo, el doctor no está preparado para descubrir la terrible verdad sobre el chico: recibe visitas de espíritus atormentados que lo asustan.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3-ZP95NF_Wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    
+        <footer>
+            <!--FOOTER-->
+            <div>
+                <nav class="footer">
+                    <ul class="footer__lista">
+                        <li><a class="footer__seleccion" href="../index.html">Cartelera |</a></li>
+                        <li><a class="footer__seleccion" href="horarios.html">Horarios |</a></li>
+                        <li><a class="footer__seleccion" href="combos.html">Combos |</a></li>
+                        <li><a class="footer__seleccion" href="precios.html">Precios |</a></li>
+                        <li><a class="footer__seleccion" href="proximos-estrenos.html">Proximos Estrenos |</a></li>
+                        <li><a class="footer__seleccion" href="contacto.html">Contacto |</a></li>
+                    </ul>
+                </nav>
+                <p class="footer__parrafo"> © Copyright Cinematrix. Todos los derechos reservados.</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com" alt="facebook" target="__blank"><img src="../imagenes/facebook.png"></a>
+                <a href="https://www.instagram.com" alt="instagram" target="__blank"><img src="../imagenes/instagram.png"></a>
+                <a href="https://www.whatsapp.com" alt="whatsapp" target="__blank"><img src="../imagenes/whatsapp.png"></a>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    </body>
+    </html>

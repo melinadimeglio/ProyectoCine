@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/pelicula (1).png" type="image/x-icon">
+    <title>CineMatrix</title>
+</head>
+<body>
+    <header>
+        <!--MENU DE NAVEGACION-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar__logo" href="index.html"><span class=color__1>Cine</span><span class="color__2">Matrix</span></a>
+                <button class="navbar-toggler navbar__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="index.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="paginas/horarios.html">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="paginas/combos.html">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="paginas/precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="paginas/proximos-estrenos.html">Proximos estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--SELECTOR DE PELICULAS DISABLED-->
+    <div class="seleccion">
+            <div class="seleccion__peliculas">
+                <select name="pelicula" id="pelicula">
+                    <option value="titanic" >Titanic - 2D Cast</option>
+                    <option value="Sev">Seven - 2D Cast</option>
+                    <option value="Pre">Mujer bonita - 2D Cast</option>
+                    <option value="Mat">Matrix - 2D Cast</option>
+                    <option value="Mom">La Momia - 2D Cast</option>
+                    <option value="Ang">Mi Pobre Angelito- 2D Cast</option>
+                    <option value="Gho">Ghost - 2D Cast</option>
+                    <option value="Bic">Bichos - 2D Cast</option>
+                    <option value="Ros">Belleza Americana - 2D Cast</option>
+                </select>
+            </div>
+
+        <div class="menu">
+            <ul class="menu__numeros">
+                <li> 
+                    <a class="menu__numeros__2" href="#">1</a>
+                    <a class="menu__numeros__2" href="#">2</a>
+                    <a class="menu__numeros__2" href="#">3</a>
+                    <a class="menu__numeros__2" href="#">4</a>
+                    <a class="menu__numeros__2" href="#">5</a>
+                    <a class="menu__numeros__2" href="#">6</a>
+                    <a class="menu__numeros__2" href="#">7</a>
+                    <a class="menu__numeros__2" href="#">8</a>
+                    <a class="menu__numeros__2" href="#">9</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="caja">
+        <!--CAROUSEL-->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/titanic.jpg" class="d-block w-100" alt="titanic">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/seven.jpg" class="d-block w-100" alt="seven">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/mujer-bonita.jpg" id="id3" class="d-block w-100" alt="mujer bonita">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/matrix.jpg" class="d-block w-100" alt="matrix">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/la-momia.jpg" class="d-block w-100" alt="la momia">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/mi-pobre-angelito.jpg" class="d-block w-100" alt="mi pobre angelito">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/el-guardaespaldas.jpg" class="d-block w-100" alt="el guardaespaldas">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/bichos.jpg" class="d-block w-100" alt="bichos">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/belleza-americana.jpg" class="d-block w-100" alt="belleza americana">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="cartelera">
+            <p class="bloque__cartelera">PELICULAS EN CARTEL</p>
+        </div> 
+
+        <!--TITANIC-->
+        <section class="contenedorTotal">
+                <div class="img-1">
+                    <img class="imagen__1" src="imagenes/titanicsinopsis.jpeg" alt="titanic sinopsis">
+                </div>
+
+                <div class="caracteristicas">    
+                    <ul>
+                        <li class="subtitulo">Genero:</li>
+                        <li>Romance</li>
+                        <li class="subtitulo">Protagonistas:
+                        <li>Leonardo DiCaprio. Kate Winslet.</li>
+                        <li class="subtitulo">Director:</li>
+                        <li>James Cameron</li>
+                        <li class="subtitulo">Nacionalidad:</li>
+                        <li>Estados Unidos</li>
+                        <li class="subtitulo">Calificacion:</li>
+                        <li>Apta para mayores de 16 años</li>
+                        <li class="subtitulo">Duracion:</li>
+                        <li>108 MIN</li>
+                        <li class="subtitulo">Distribuidora:</li>
+                        <li>Buena Vista</li>
+                    </ul>
+                </div>
+
+                <div class="sinopsis">   
+                        <p><span class="titulo__pelicula">TITANIC</span></p>
+                        <p>Jack es un joven artista que gana un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido. A bordo del buque conoce a Rose, una chica de clase alta que viaja con su madre y su prometido Cal, un millonario engreído a quien solo interesa el prestigio de la familia de su prometida. Jack y Rose se enamoran a pesar de las trabas que ponen la madre de ella y Cal en su relación. Mientras, el lujoso transatlántico se acerca a un inmenso iceberg. </p>
+                        <input class="boton" type="submit" value="Comprar">    
+                    </div>
+
+                <div class="video">
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CHekzSiZjrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+        </section>
+            
+
+        <!--SE7EN-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__2"src="imagenes/Seven_Se7en-734875211-large.jpeg" alt="seven sinopsis">
+            </div>
+
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Thriller</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Brad Pitt. Morgan Freeman.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>David Fincher</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">SE7EN</span></p>
+                <p>El veterano teniente Somerset está a punto de jubilarse y ser reemplazado por el impulsivo detective David Mills. Ambos tendrán que colaborar en la resolución de unos asesinatos cometidos por un psicópata que se basa en los siete pecados capitales.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+                        
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xhzBmjdehPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--MUJER BONITA-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__3" src="imagenes/pretty woman sinopsis.jpeg" alt="pretty woman sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Romance</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Julia Roberts. Edward Lewis.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Garry Marshall</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">MUJER BONITA</span></p>
+                <p>Durante un viaje de negocios a Los Ángeles, Edward, un ejecutivo que compra y vende empresas, encuentra a la prostituta Vivian. Después de pasar una primera noche con ella, Edward le ofrece dinero para que pase toda la semana con él y le acompañe a diversos actos sociales. A medida que van pasando los días, los dos descubren que tienen que superar diversos obstáculos para poder unir sus mundos tan distintos.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/DvPEFrTBu_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
+        </section>
+
+
+        <!--MATRIX-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__4" src="imagenes/Matrix-155050517-large.jpeg" alt="matrix sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Ciencia Ficcion</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Keanu Reeves. Laurence Fishburne.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Hermanas Wachowski</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">MATRIX</span></p>
+                <p>El programador informático Thomas Anderson, más conocido en el mundo de los "hacker" como Neo, está en el punto de mira del temible agente Smith. Otros dos piratas informáticos, Trinity y Morfeo, se ponen en contacto con Neo para ayudarlo a escapar. Matrix te posee. Sigue al conejo blanco.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/m8e-FF8MsqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--LA MOMIA-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__5"src="imagenes/la momia sinopsis.jpeg" alt="la momia sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Aventuras</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Brendan Fraser. Rachel Weisz.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Stephen Sommers</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">LA MOMIA</span></p>
+                <p>Rick O'Connell y un compañero descubren las ruinas de Hamunaptra. Después vuelven al mismo lugar con una egiptóloga y su hermano. Allí coinciden con un grupo de americanos que provocan la resurrección de la momia de un diabólico sacerdote egipcio.</p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CT6yWV9e4Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--MI POBRE ANGELITO-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__6" src="imagenes/mi pobre angelito sinopsis.jpeg" alt="mi pobre angelito sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Comedia</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Macaulay Culkin.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Chris Colombus</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">MI POBRE ANGELITO</span></p>
+                <p>El joven Kevin McCallister se porta mal la noche antes de ir de viaje a París, por lo que su madre le obliga a dormir en el ático. Al día siguiente y con todas las prisas, la familia va al aeropuerto y se olvida de Kevin. Entonces el niño se despierta solo en casa y cree que ha hecho realidad su sueño de vivir sin familia. Sin embargo, el entusiasmo de Kevin se desvanece cuando descubre que dos delincuentes planean robar la casa de los McCallister y él deberá protegerla.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/I-zoVUYHPMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--EL GUARDAESPALDAS-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__7" src="imagenes/el-guardaespaldas .jpeg" alt="el guardaespaldas sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Romance</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Kevin Costner. Whitney Houston.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Mick Jackson</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">EL GUARDAESPALDAS</span></p>
+                <p>Un agente del servicio secreto, ahora guardaespaldas, encuentra el peligro y el amor cuando protege a una cantante.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4JFRdJTszRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--BICHOS-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__8" src="imagenes/bichos.jpeg" alt="bichos sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Aventura</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Bichos</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>John Lasseter. Andrew Stanton</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">BICHOS</span></p>
+                <p>Una hormiga realiza una misión peligrosa para proteger a su colonia de un ejército de saltamontes terroristas.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/38wy8FR_8aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+        </section>
+
+        <!--BELLEZA AMERICANA-->
+        <section class="contenedorTotal">
+            <div class="img-1">
+                <img class="imagen__9" src="imagenes/belleza-americana.jpeg" alt="belleza americana sinopsis">
+            </div>
+            <div class="caracteristicas">    
+                <ul>
+                    <li class="subtitulo">Genero:</li>
+                    <li>Aventura</li>
+                    <li class="subtitulo">Protagonistas:
+                    <li>Kevin Spacey. Annette Bening.</li>
+                    <li class="subtitulo">Director:</li>
+                    <li>Sam Mendes</li>
+                    <li class="subtitulo">Nacionalidad:</li>
+                    <li>Estados Unidos</li>
+                    <li class="subtitulo">Calificacion:</li>
+                    <li>Apta para mayores de 16 años</li>
+                    <li class="subtitulo">Duracion:</li>
+                    <li>108 MIN</li>
+                    <li class="subtitulo">Distribuidora:</li>
+                    <li>Buena Vista</li>
+                </ul>
+            </div>
+            <div class="sinopsis">   
+                <p><span class="titulo__pelicula">BELLEZA AMERICANA</span></p>
+                <p>Lester Burnham es un cuarentón en crisis, cansado de su trabajo y de su mujer, que despierta de su letargo cuando conoce a la atractiva amiga de su hija, a la que intentará impresionar a toda costa.
+                </p>
+                <input class="boton" type="submit" value="Comprar">    
+            </div>
+
+            <div class="video">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/GqXz2NeSpY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul class="footer__lista">
+                    <li><a class="footer__seleccion" href="index.html">Cartelera |</a></li>
+                    <li><a class="footer__seleccion" href="paginas/horarios.html">Horarios |</a></li>
+                    <li><a class="footer__seleccion" href="paginas/combos.html">Combos |</a></li>
+                    <li><a class="footer__seleccion" href="paginas/precios.html">Precios |</a></li>
+                    <li><a class="footer__seleccion" href="paginas/proximos-estrenos.html">Proximos Estrenos |</a></li>
+                    <li><a class="footer__seleccion" href="paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <p class="footer__parrafo"> © Copyright Cinematrix. Todos los derechos reservados.</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com" alt="facebook" target="__blank"><img src="imagenes/facebook.png"></a>
+            <a href="https://www.instagram.com" alt="instagram" target="__blank"><img src="imagenes/instagram.png"></a>
+            <a href="https://www.whatsapp.com" alt="whatsapp" target="__blank"><img src="imagenes/whatsapp.png"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</body>
+</html>
